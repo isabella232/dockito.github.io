@@ -1,23 +1,17 @@
 ---
-layout: default
+layout: landing-page
 ---
 
-<div class="home">
+<div class="landing-page">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1>Dockito</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <p>A set of tools to make developing Docker applications simpler.</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <h2>The development box</h2>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p>A Vagrant box with Docker, Docker Compose (former fig.sh) and Nginx.</p>
+
+  <a href="https://github.com/dockito/devbox">https://github.com/dockito/devbox</a>
 
 </div>
